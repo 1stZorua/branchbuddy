@@ -1,6 +1,5 @@
 import "package:branchbuddy/models/tree.dart";
 import "package:flutter/material.dart";
-import "package:flutter/widgets.dart";
 import "package:geolocator/geolocator.dart";
 import "package:go_router/go_router.dart";
 import "package:branchbuddy/providers/index.dart" show TreeProvider;
@@ -21,7 +20,6 @@ class _CreateScreenState extends State<CreateScreen> {
 
   DateTime _date = DateTime.now();
   Position? _currentPosition;
-  // This function will get user location
 
   void _presentDatePicker() {
     // showDatePicker is a pre-made funtion of Flutter
@@ -41,6 +39,7 @@ class _CreateScreenState extends State<CreateScreen> {
     });
   }
 
+  // This function handles the location permission
   Future<bool> _handleLocationPermission() async {
     final serviceEnabled = await Geolocator.isLocationServiceEnabled();
     if (!serviceEnabled) return false;
@@ -54,6 +53,7 @@ class _CreateScreenState extends State<CreateScreen> {
     return permission != LocationPermission.deniedForever;
   }
 
+  // This function grabs the current location of the user
   Future<void> _getCurrentPosition() async {
     final hasPermission = await _handleLocationPermission();
     if (!hasPermission) return;
