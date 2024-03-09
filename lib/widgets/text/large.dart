@@ -1,7 +1,9 @@
 import "package:flutter/material.dart";
 
 class TextLarge extends StatelessWidget {
+  // Text
   final String text;
+  // Textstyle
   final TextStyle? style;
 
   const TextLarge({ required this.text, this.style, super.key });
