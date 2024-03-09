@@ -6,6 +6,7 @@ import "package:go_router/go_router.dart";
 import "package:branchbuddy/widgets/index.dart" show TextMedium, TextLarge;
 
 class DetailsScreen extends StatelessWidget {
+  // Tree json parameter
   final String treeJson;
 
   const DetailsScreen({ 
@@ -15,7 +16,9 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
+    // Decoded the string to valid json
     final decodedTree = jsonDecode(treeJson);
+    // Convert the decoded tree to a valid tree object
     final tree = Tree.fromJson(decodedTree);
 
     return Stack(
