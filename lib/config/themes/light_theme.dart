@@ -1,6 +1,7 @@
 import "package:branchbuddy/utils/index.dart" show hexToColor;
 import "package:flutter/material.dart";
 
+// Main theme of the application
 ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
   colorScheme: ColorScheme.light(
