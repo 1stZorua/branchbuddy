@@ -1,7 +1,9 @@
 import "package:flutter/material.dart";
 
 class TextSmall extends StatelessWidget {
+  // Text
   final String text;
+  // Textstyle
   final TextStyle? style;
 
   const TextSmall({ required this.text, this.style, super.key });
