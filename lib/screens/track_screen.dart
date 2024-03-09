@@ -13,8 +13,10 @@ class TrackScreen extends StatefulWidget {
 }
 
 class _TrackScreenState extends State<TrackScreen> {
+  // The selected month, defaults to the current month
   String selectedMonth = DateFormat('MMMM').format(DateTime.now());
 
+  // Monthly tree tips
   final Map<String, dynamic> tips = {
     "January": "Prune deciduous trees to promote healthy growth in the spring.",
     "February": "Protect young trees from frost by covering them with cloth or burlap.",
