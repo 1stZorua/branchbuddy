@@ -7,6 +7,7 @@ import "package:go_router/go_router.dart";
 import "package:intl/intl.dart";
 
 class TreeCard extends StatelessWidget {
+  // Tree object
   final Tree tree;
 
   const TreeCard ({ 
