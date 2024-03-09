@@ -7,8 +7,11 @@ import 'package:provider/provider.dart';
 import "package:branchbuddy/config/index.dart" show router, lightTheme;
 
 void main() async {
+  // Initializes Hive
   await Hive.initFlutter();
+  // Registers tree adapter
   Hive.registerAdapter(TreeAdapter());
+  // Opens Hive tree box
   await Hive.openBox<Tree>("treeBox");
   runApp(const MyApp());
 }
@@ -20,9 +23,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        // Create navigation provider
         ChangeNotifierProvider(
           create: (context) => NavigationProvider()
         ),
+        // Create tree provider
         ChangeNotifierProvider(
           create: (context) => TreeProvider()
         ),
