@@ -2,7 +2,9 @@ import "package:branchbuddy/widgets/index.dart" show TextMedium;
 import "package:flutter/material.dart";
 
 class ButtonPrimary extends StatelessWidget {
+  // Text
   final String text;
+  // Function executed on press
   final VoidCallback? onPressed;
 
   const ButtonPrimary({ 
