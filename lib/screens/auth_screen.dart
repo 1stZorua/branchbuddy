@@ -10,6 +10,7 @@ class AuthScreen extends StatefulWidget {
 }
 
 class _AuthScreenState extends State<AuthScreen> {
+  // Variable to keep track of the state of the checkbox
   bool checked = false;
 
   @override
