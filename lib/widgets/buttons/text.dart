@@ -2,8 +2,11 @@ import "package:branchbuddy/widgets/index.dart" show TextMedium;
 import "package:flutter/material.dart";
 
 class ButtonText extends StatelessWidget {
+  // Text
   final String text;
+  // Icon
   final Icon? icon;
+  // Function executed on press
   final VoidCallback? onPressed;
 
   const ButtonText({ 
