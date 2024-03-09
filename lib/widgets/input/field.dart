@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 
 class InputField extends StatelessWidget {
+  // Placeholder
   final String placeholder;
 
   const InputField({ 
