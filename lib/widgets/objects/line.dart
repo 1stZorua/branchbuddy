@@ -1,8 +1,11 @@
 import "package:flutter/material.dart";
 
 class Line extends StatelessWidget {
+  // Height
   final double height;
+  // Width
   final double width;
+  // Color
   final Color color;
 
   const Line ({ 
