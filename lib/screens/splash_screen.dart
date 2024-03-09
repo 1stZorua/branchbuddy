@@ -6,6 +6,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
+    // Goes to another screen after a delay of 2 seconds
     Future.delayed(const Duration(seconds: 2))
       .then((value) => GoRouter.of(context).goNamed("auth"));
     return Stack(
