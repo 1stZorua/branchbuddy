@@ -6,10 +6,15 @@ import "package:branchbuddy/utils/index.dart" show hexToColor;
 import "package:branchbuddy/widgets/index.dart" show TextMedium;
 
 class CustomTimeLineTile extends StatelessWidget {
+  // Title
   final String title;
+  // Variable to keep track of the active state
   final bool isActive;
+  // Is the first item
   final bool isFirst;
+  // Is the last item
   final bool isLast;
+  // Function executed on press
   final VoidCallback? onPressed;
 
   const CustomTimeLineTile({
