@@ -3,7 +3,9 @@ import "package:branchbuddy/utils/index.dart" show hexToColor;
 import "package:branchbuddy/widgets/index.dart" show TextLarge, Line;
 
 class ModalBottomSheet extends StatelessWidget {
+  // Title
   final String title;
+  // Children 
   final List<Widget> children;
 
   const ModalBottomSheet({ 
