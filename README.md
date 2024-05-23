@@ -2,6 +2,9 @@
 
 Branchbuddy is a mobile application built with Flutter designed to encourage tree planting activities and promote environmental sustainability. With branchbuddy, users can track their tree planting activities, access educational resources, engage with a community of like-minded individuals, and earn rewards for their participation.
 
+## Figma Design
+The design of branchbuddy focuses on a clean, user-friendly interface to enhance the tree planting experience. For detailed design elements, please refer to the [Figma design](https://www.figma.com/design/hTB6vreWJZnXPcryfJVogT/branchbuddy-high-fidelity?t=bMG9zBrtGFbnhhVy-1).
+
 ## Features
 
 - Track treep planting activities with detailed information such as species planted, location, and date.
